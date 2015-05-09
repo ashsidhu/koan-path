@@ -1,10 +1,9 @@
 /**
  * Created by riteshkumar on 09/05/15.
  */
-var db = require('../db');
-var bookshelf = require('bookshelf');
+var bookshelf = require('../db');
 
-var authUser = bookshelf(db).Model.extend({
+var authUser = bookshelf.Model.extend({
   tableName: 'authUsers',
   hasTimestamps: true
 });

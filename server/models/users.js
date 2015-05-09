@@ -1,7 +1,6 @@
-var db = require('../db');
-var bookshelf = require('bookshelf');
+var bookshelf = require('../db');
 
-var Users = bookshelf(db).Model.extend({
+var Users = bookshelf.Model.extend({
   tableName: 'users',
   hasTimestamps: true
 });
