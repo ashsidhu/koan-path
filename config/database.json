@@ -1,0 +1,23 @@
+{
+  "DEVELOPMENT": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": "pointer",
+    "host": "localhost",
+    "database": "koans_development"
+  },
+  "PRODUCTION": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": "pointer",
+    "host": "localhost",
+    "database": "koans_development"
+  },
+  "TESTING": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": "pointer",
+    "host": "localhost",
+    "database": "koans_testing"
+  }
+}
