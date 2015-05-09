@@ -1,0 +1,21 @@
+{
+  "name": "koan-path",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ashsidhu/koan-path",
+  "authors": [
+    "Ashmeet Sidhu <ashmeet.sidhu7@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
