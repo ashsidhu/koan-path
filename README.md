@@ -3,9 +3,12 @@ Postgress needs to be installed before npm install can be run
 `brew install postgres` for Mac OSX.
 
 create 3 databases
-CREATE DATABASE koan_development;
-CREATE DATABASE koan_production;
-CREATE DATABASE koan_testing;
+
+$ CREATE DATABASE koans_development;
+
+$ CREATE DATABASE koans_production;
+
+$ CREATE DATABASE koans_testing;
 
 
 migration
