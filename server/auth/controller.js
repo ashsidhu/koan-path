@@ -1,4 +1,4 @@
-var User = require('./userModel');
+var User = require('../models/authUsers');
 
 var controller = {
   signup: function (req, res, next) {
