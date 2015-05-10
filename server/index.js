@@ -18,6 +18,7 @@ app.get('/',function(req,res,next){
 console.log('yo 3000')
 
 app.use('/auth', auth);
+app.use('/admin', admin);
 
 var port = 3000;
 app.set('port', port);
