@@ -1,5 +1,5 @@
 var db = require('../db');
-var bookshelf = require('bookshelf');
+var bookshelf = require('bookshelf')(db);
 
 db.schema.hasTable('users').then(function (exists) {
   if (!exists) {
@@ -14,9 +14,14 @@ db.schema.hasTable('users').then(function (exists) {
   }
 });
 
-db.schema.dropTable('users');
-var User = bookshelf(db).Model.extend({
+var User = bookshelf.Model.extend({
   tableName: 'users',
   hasTimestamps: true,
+  signup: function (email, password) {
+    return this.set({
+      email: email, 
+      password: password
+    }).save()
+  }
 });
 module.exports = User;
